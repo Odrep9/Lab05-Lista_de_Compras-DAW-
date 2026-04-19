@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale =1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles/lista-compras.css">
+    <script src="scripts/lista-compras.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <div class="adicionar-item">
+            <input type="text" id="input-item" placeholder="Adicionar item...">
+            <select id="select-categoria">
+                <option value="Geral">Geral</option>
+                <option value="Frutas">Frutas</option>
+                <option value="Legumes">Legumes</option>
+                <option value="Laticínios">Laticínios</option>
+                <option value="Padaria">Padaria</option>
+            </select>
+            <button id="btn-adicionar">Adicionar</button>
+        </div>
+        <ul id="lista-itens">
+
+            <!-- Itens serão adicionados aqui dinamicamente -->
+        </ul>
+        <div class="info">
+            <p>Total de itens: <span id="total-itens">0</span></p>
+            <p>Total de unidades: <span id="total-unidades">0</span></p>
+            <p>Itens comprados: <span id="comprados">0</span></p>
+        </div>
+        <div class="controlos">
+            <button id="btn-ordenar">Ordenar</button>
+            <button id="btn-limpar">Limpar Tudo</button>
+        </div>
+        <div class="tema-toggle">
+            <label for="toggle-escuro">Modo Escuro:</label>
+            <input type="checkbox" id="toggle-escuro">
+        </div>
+    </div>
+
+
+</body>
+
+</html>

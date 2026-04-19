@@ -1,0 +1,165 @@
+/* Ação 1 - Base da página */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e7e3e3;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Ação 2 - Input e botões */
+
+.adicionar-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#input-item {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 14px;
+    background: #2b7a78;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #205e5d;
+}
+
+/* Ação 3 - Lista e contador */
+
+#lista-itens {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.item-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.item-nome {
+    flex: 1;
+}
+
+.btn-remover {
+    background: #c0392b;
+}
+
+.btn-remover:hover {
+    background: #992d22;
+}
+
+.info {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#total-itens {
+    font-weight: bold;
+}
+
+
+#btn-limpar {
+    margin-top: 15px;
+    width: 100%;
+    background: #c43d2e;
+}
+
+#btn-limpar:hover {
+    background: #9f2929;
+}
+
+
+.controlos {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.controlos button {
+    flex: 1;
+}
+
+#btn-ordenar {
+    margin-top: 15px;
+    width: 100%;
+    background: #27ae60;
+}
+
+#btn-ordenar:hover {
+    background: #229954;
+}
+
+
+.tema-toggle {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+body.escuro {
+    background: linear-gradient (135deg, #2c3e50 1%, #34495e 100%);
+}
+
+body.escuro .container {
+    background: #34495e;
+    color: #ecf0f1;
+}
+
+body.escuro h1 {
+    color: #ecf0f1;
+}
+
+body.escuro .item-lista {
+    background: #2c3e50;
+}
+
+body.escuro .item-nome {
+    color: #ecf0f1;
+}
+
+#select-categoria {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.quantidade-controlo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantidade-controlo button {
+    padding: 4px 10px;
+}
+
+.item-comprado.item-nome {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
